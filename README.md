@@ -1,1 +1,1 @@
-# mulesoft-developer-i-study
+# MuleSoft Developer I Study
