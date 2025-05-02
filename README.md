@@ -7,7 +7,7 @@ The project that will be built will be an eCommerce API Platform, called MuleCar
 ## Study Plan
 
 - [ ] [Week 1: Application Networks & API-Led Connectivity](week-01/README.md)
-- [ ] [Week 2: Designing APIs with RAML](week-02-designing-apis-with-raml/README.md)
+- [ ] [Week 2: API Design (RAML)](week-02/README.md)
 - [ ] [Week 3: API Implementation Interfaces](week-03-api-implementation-interfaces/README.md)
 - [ ] [Week 4: Mule Events & Application Structure](week-04-mule-events-application-structure/README.md)
 - [ ] [Week 5: Using Connectors (DB, File, FTP)](week-05-using-connectors-db-file-ftp/README.md)
