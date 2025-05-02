@@ -12,7 +12,7 @@ The project that will be built will be an eCommerce API Platform, called MuleCar
 - [ ] [Week 4: Accessing and Modifying Mule Events](week-04/README.md)
 - [ ] [Week 5: Structuring Mule Applications](week-05/README.md)
 - [ ] [Week 6: Using Connectors](week-06/README.md)
-- [ ] [Week 7: Routing & Event Flow](week-07-routing-event-flow/README.md)
+- [ ] [Week 7: Processing Records](week-07/README.md)
 - [ ] [Week 8: Record Processing](week-08-record-processing/README.md)
 - [ ] [Week 9: Error Handling](week-09-error-handling/README.md)
 - [ ] [Week 10: Deployment, Testing, and Management](week-10-deployment-testing-and-management/README.md)
