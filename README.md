@@ -1,8 +1,10 @@
 # MuleSoft Developer I Study
 
-This study plan was made with the help of ChatGPT using the [exam outline](exam-outline.md) and topics from the trailhead course [Anypoint Platform Development: Fundamentals - DEX401](anypoint-platform-development-fundamentals.md) with the goal of combining the theory with practical projects.
+**MuleCart** is a fully modular, API-led system for managing a product catalog — built with MuleSoft and deployed on CloudHub.
 
-The project that will be built will be an eCommerce API Platform, called MuleCart, for a fictional multi-channel retail company. Each week will focus on a different aspect of the API platform.
+This project is intended to be developed incrementally over 12 weeks as a practical companion to the MuleSoft Developer I certification.
+
+The plan for this project was prepared with ChatGPT using the [exam outline](exam-outline.md) and topics from the trailhead course [Anypoint Platform Development: Fundamentals - DEX401](anypoint-platform-development-fundamentals.md) as inputs.
 
 ## Study Plan
 
