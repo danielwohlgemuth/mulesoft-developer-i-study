@@ -8,7 +8,7 @@ The project that will be built will be an eCommerce API Platform, called MuleCar
 
 - [ ] [Week 1: Application Networks & API-Led Connectivity](week-01/README.md)
 - [ ] [Week 2: API Design (RAML)](week-02/README.md)
-- [ ] [Week 3: API Implementation Interfaces](week-03-api-implementation-interfaces/README.md)
+- [ ] [Week 3: API Implementation Interfaces](week-03/README.md)
 - [ ] [Week 4: Mule Events & Application Structure](week-04-mule-events-application-structure/README.md)
 - [ ] [Week 5: Using Connectors (DB, File, FTP)](week-05-using-connectors-db-file-ftp/README.md)
 - [ ] [Week 6: Transforming Data with DataWeave](week-06-transforming-data-with-dataweave/README.md)
