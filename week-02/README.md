@@ -55,7 +55,6 @@ This layer is also the public-facing contract that will later be backed by imple
 - Mock the API and test each endpoint with sample requests/responses.
 - Document and annotate endpoints (descriptions, response codes, media types).
 - Publish to Exchange and link it to the API portal created in Week 1.
-
-## In your README:
-- Explain design decisions (e.g. why traits were used)
-- Outline usage for frontend/mobile devs
+- In your README:
+    - Explain design decisions (e.g. why traits were used)
+    - Outline usage for frontend/mobile devs
