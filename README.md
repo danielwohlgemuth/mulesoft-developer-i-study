@@ -15,4 +15,4 @@ The project that will be built will be an eCommerce API Platform, called MuleCar
 - [ ] [Week 7: Processing Records](week-07/README.md)
 - [ ] [Week 8: DataWeave Transformations](week-08/README.md)
 - [ ] [Week 9: Routing Events](week-09/README.md)
-- [ ] [Week 10: Deployment, Testing, and Management](week-10-deployment-testing-and-management/README.md)
+- [ ] [Week 10: Handling Errors](week-10/README.md)
