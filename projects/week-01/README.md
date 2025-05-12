@@ -10,11 +10,11 @@ I initially started with RAML code until I realized that I wanted a more guided 
 
 ![anypoint designcenter RAML raw](assets/anypoint-designcenter-RAML-raw.png)
 
-After researching RAML a bit more, I found that it has an official website, but when you try to click on the `Try It Out` button, it redirects you to a page that doesn't exist.
+After researching RAML a bit more, I found that it has an [official website](https://raml.org/), but when you try to click on the `Try It Out` button, it redirects you to a page that doesn't exist.
 
 ![raml.org](assets/raml.org.png)
 
-There is also a GitHub repository for RAML, but all of it's repositories have been archived.
+There is also a [GitHub repository](https://github.com/raml-org) for RAML, but all of it's repositories have been archived.
 
 ![github.com raml-org](assets/github.com_raml-org.png)
 
