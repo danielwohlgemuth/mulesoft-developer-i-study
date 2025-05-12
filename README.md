@@ -8,15 +8,28 @@ The plan for this project was prepared with ChatGPT using the [exam outline](exa
 
 ## Study Plan
 
-- [ ] [Week 1: Application Networks & API-Led Connectivity](week-01/README.md)
-- [ ] [Week 2: API Design (RAML)](week-02/README.md)
-- [ ] [Week 3: API Implementation Interfaces](week-03/README.md)
-- [ ] [Week 4: Accessing and Modifying Mule Events](week-04/README.md)
-- [ ] [Week 5: Structuring Mule Applications](week-05/README.md)
-- [ ] [Week 6: Using Connectors](week-06/README.md)
-- [ ] [Week 7: Processing Records](week-07/README.md)
-- [ ] [Week 8: DataWeave Transformations](week-08/README.md)
-- [ ] [Week 9: Routing Events](week-09/README.md)
-- [ ] [Week 10: Handling Errors](week-10/README.md)
-- [ ] [Week 11: Debugging and Testing with MUnit](week-11/README.md)
-- [ ] [Week 12: Deploying and Managing APIs](week-12/README.md)
+- [ ] Week 1: Application Networks & API-Led Connectivity
+  - [Study Plan](week-01/README.md)
+  - [Project](projects/week-01/README.md)
+- [ ] Week 2: API Design (RAML)
+  - [Study Plan](week-02/README.md)
+- [ ] Week 3: API Implementation Interfaces
+  - [Study Plan](week-03/README.md)
+- [ ] Week 4: Accessing and Modifying Mule Events
+  - [Study Plan](week-04/README.md)
+- [ ] Week 5: Structuring Mule Applications
+  - [Study Plan](week-05/README.md)
+- [ ] Week 6: Using Connectors
+  - [Study Plan](week-06/README.md)
+- [ ] Week 7: Processing Records
+  - [Study Plan](week-07/README.md)
+- [ ] Week 8: DataWeave Transformations
+  - [Study Plan](week-08/README.md)
+- [ ] Week 9: Routing Events
+  - [Study Plan](week-09/README.md)
+- [ ] Week 10: Handling Errors
+  - [Study Plan](week-10/README.md)
+- [ ] Week 11: Debugging and Testing with MUnit
+  - [Study Plan](week-11/README.md)
+- [ ] Week 12: Deploying and Managing APIs
+  - [Study Plan](week-12/README.md)
