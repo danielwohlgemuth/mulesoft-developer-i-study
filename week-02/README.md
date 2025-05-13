@@ -1,9 +1,9 @@
-# Week 2: API Design (RAML)
+# Week 2: API Design (OAS)
 
 ## Learning Goals
-- Learn to define APIs using RAML 1.0 specification syntax.
+- Learn to define APIs using OpenAPI Specification (OAS) 3.0 specification syntax.
 - Design RESTful endpoints using resources, methods, parameters, and response types.
-- Structure a RAML project with data types, examples, and traits for reuse.
+- Structure a OAS project with data types, examples, and traits for reuse.
 - Validate and test APIs using Mocking Service in Anypoint Design Center.
 
 ## Business Context
@@ -15,16 +15,16 @@ This layer is also the public-facing contract that will later be backed by imple
 ```
 /projects/week02-product-api-design/
   /experience-api/
-    - catalog-experience-api.raml
+    - catalog-experience-api.json
     - dataTypes/
-        - Product.raml
-        - Category.raml
+        - Product.json
+        - Category.json
     - examples/
         - product-example.json
         - category-example.json
     - traits/
-        - pagination.raml
-        - error-response.raml
+        - pagination.json
+        - error-response.json
   README.md
 ```
 
@@ -32,11 +32,11 @@ This layer is also the public-facing contract that will later be backed by imple
 - Base URI: /products
 
 ### Endpoints:
-- `GET /` – Returns a paginated list of products
-- `GET /{id}` – Returns detailed information about a specific product
-- `GET /featured` – Returns promoted products for the homepage
-- `GET /search?q=...` – Full-text product search
-- `GET /categories` – Returns all product categories
+- `GET /products` – Returns a paginated list of products
+- `GET /products/{id}` – Returns detailed information about a specific product
+- `GET /products/featured` – Returns promoted products for the homepage
+- `GET /products/search?q=...` – Full-text product search
+- `GET /products/categories` – Returns all product categories
 
 ### Data Types:
 - Product: includes id, name, price, description, image, inventoryStatus
@@ -47,8 +47,8 @@ This layer is also the public-facing contract that will later be backed by imple
 - error-response: standardized error response with code, message, timestamp
 
 ## Workflow
-- Define the main RAML spec for the Experience API using Anypoint Design Center.
-- Create modular RAML components:
+- Define the main OAS spec for the Experience API using Anypoint Design Center.
+- Create modular OAS components:
     - Reusable data types (Product, Category)
     - Common traits (e.g. paginated, secured)
     - Realistic examples in JSON

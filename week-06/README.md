@@ -54,9 +54,9 @@ Modify these flows to use the DB connector:
     → Parameterized query: SELECT * FROM products WHERE id = :id
 - GET /categories
     → Join categories: SELECT * FROM categories
-- GET /featured
+- GET /products/featured
     → Filtered query: SELECT * FROM products WHERE is_featured = TRUE
-- GET /search?q=shoes
+- GET /products/search?q=shoes
     → Add SQL ILIKE filter on name or description
 
 ## Workflow

@@ -11,7 +11,7 @@ The plan for this project was prepared with ChatGPT using the [exam outline](exa
 - [x] Week 1: Application Networks & API-Led Connectivity
   - [Study Plan](week-01/README.md)
   - [Project](projects/week-01/README.md)
-- [ ] Week 2: API Design (RAML)
+- [ ] Week 2: API Design (OAS)
   - [Study Plan](week-02/README.md)
 - [ ] Week 3: API Implementation Interfaces
   - [Study Plan](week-03/README.md)

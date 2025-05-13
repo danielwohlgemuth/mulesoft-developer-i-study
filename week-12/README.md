@@ -55,7 +55,7 @@ MuleCart is ready for production. You’ll deploy it to the cloud, enforce rate-
 
 ### 5. Create & Deploy API Proxy
 - If needed (e.g., for externally exposed APIs), create a proxy:
-    - Upload the RAML spec
+    - Upload the OAS spec
     - Use Anypoint CLI or Platform UI to deploy it
     - Route requests to the CloudHub-hosted backend
 

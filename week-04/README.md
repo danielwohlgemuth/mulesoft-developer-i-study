@@ -46,7 +46,7 @@ You’ll refactor the Experience API implementation from Week 3 to:
 - In catalog-experience-api.xml, locate flows for:
     - GET /products
     - GET /products/{id}
-    - GET /search
+    - GET /products/search
 
 ### Modify each using:
 - Set Variable to store search criteria, product subsets

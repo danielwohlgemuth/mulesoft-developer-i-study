@@ -3,7 +3,7 @@
 ## Learning Goals
 - Understand the principles of API-led connectivity and how to design with System, Process, and Experience API layers.
 - Identify the role of an Application Network in decoupling systems and enabling reuse.
-- Learn how to use RAML to define APIs, mock endpoints, and publish them to Anypoint Exchange.
+- Learn how to use OpenAPI Specification (OAS) to define APIs, mock endpoints, and publish them to Anypoint Exchange.
 - Practice organizing an API project for discoverability and collaboration (portal, tags, documentation).
 
 ## Business Context
@@ -40,7 +40,7 @@ Tailored for the web/mobile store frontend.
 - `GET /products/featured` – Featured or promoted products for homepage
 
 ## Workflow
-1. Design RAML specifications for each API layer using Anypoint Design Center.
+1. Design OAS specifications for each API layer using Anypoint Design Center.
 2. Use mocking service to simulate responses and allow parallel frontend/backend development.
 3. Publish APIs to Exchange with proper documentation and tags (e.g., System, Process, Experience).
 4. Create an API portal for the Experience API with usage instructions for web/mobile teams.
