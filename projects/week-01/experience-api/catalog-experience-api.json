@@ -1,31 +1,20 @@
 {
   "openapi": "3.0.0",
   "info": {
-    "title": "catalog-db-system-api",
+    "title": "catalog-experience-api",
     "version": "v1"
   },
   "paths": {
-    "/categories": {
+    "/products/featured": {
       "get": {
-        "operationId": "List product categories",
+        "description": "Featured or promoted products for homepage",
         "responses": {
           "200": {
             "description": "",
             "content": {
               "application/json": {
                 "schema": {
-                  "type": "object",
-                  "required": [
-                    "categories"
-                  ],
-                  "properties": {
-                    "categories": {
-                      "type": "array",
-                      "items": {
-                        "$ref": "#/components/schemas/Category"
-                      }
-                    }
-                  }
+                  "$ref": "#/components/schemas/ProductsResponse"
                 }
               }
             }
@@ -43,7 +32,7 @@
         },
         "servers": [
           {
-            "url": "https://mulecart.com/{version}/system",
+            "url": "https://mulecart.com/{version}/experience",
             "variables": {
               "version": {
                 "default": "v1"
@@ -60,27 +49,16 @@
         ]
       }
     },
-    "/products": {
+    "/products/public": {
       "get": {
-        "operationId": "List all products",
+        "description": "Minimal product data (id, name, price, image)",
         "responses": {
           "200": {
             "description": "",
             "content": {
               "application/json": {
                 "schema": {
-                  "type": "object",
-                  "required": [
-                    "products"
-                  ],
-                  "properties": {
-                    "products": {
-                      "type": "array",
-                      "items": {
-                        "$ref": "#/components/schemas/Product"
-                      }
-                    }
-                  }
+                  "$ref": "#/components/schemas/ProductsResponse"
                 }
               }
             }
@@ -98,72 +76,7 @@
         },
         "servers": [
           {
-            "url": "https://mulecart.com/{version}/system",
-            "variables": {
-              "version": {
-                "default": "v1"
-              }
-            },
-            "x-amf-parameters": {
-              "version": {
-                "default": "v1",
-                "example": "v1",
-                "type": "string"
-              }
-            }
-          }
-        ]
-      }
-    },
-    "/products/{id}": {
-      "get": {
-        "operationId": "Retrieve product by ID",
-        "parameters": [
-          {
-            "name": "id",
-            "required": true,
-            "in": "path",
-            "schema": {
-              "type": "string"
-            }
-          }
-        ],
-        "requestBody": {
-          "content": {}
-        },
-        "responses": {
-          "200": {
-            "description": "",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "type": "object",
-                  "required": [
-                    "product"
-                  ],
-                  "properties": {
-                    "product": {
-                      "$ref": "#/components/schemas/Product"
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "500": {
-            "description": "",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          }
-        },
-        "servers": [
-          {
-            "url": "https://mulecart.com/{version}/system",
+            "url": "https://mulecart.com/{version}/experience",
             "variables": {
               "version": {
                 "default": "v1"
@@ -183,15 +96,17 @@
   },
   "components": {
     "schemas": {
-      "Category": {
+      "ProductsResponse": {
         "type": "object",
         "required": [
-          "name"
+          "products"
         ],
         "properties": {
-          "name": {
-            "example": "Bedroom",
-            "type": "string"
+          "products": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/Product"
+            }
           }
         }
       },
@@ -202,7 +117,7 @@
         ],
         "properties": {
           "message": {
-            "example": "Couldn't find the product",
+            "example": "Couldn't find any products",
             "type": "string"
           }
         }

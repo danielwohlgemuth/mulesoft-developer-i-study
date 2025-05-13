@@ -26,5 +26,7 @@ Having worked with the Swagger UI before for API documentation, I tried importin
 
 ![editor swagger io](assets/editor.swagger.io.png)
 
-Finished files:
+OAS files:
 - [catalog-db-system-api.json](system-api/catalog-db-system-api.json)
+- [catalog-process-api.json](process-api/catalog-process-api.json)
+- [catalog-experience-api.json](experience-api/catalog-experience-api.json)

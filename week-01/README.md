@@ -11,13 +11,13 @@ MuleCart is establishing an API-led backend architecture to power its eCommerce 
 
 ## Project Structure
 ```
-/projects/week01-product-catalog-network/
+/projects/week-01/
   /experience-api/
-    - catalog-experience-api.raml
+    - catalog-experience-api.json
   /process-api/
-    - catalog-process-api.raml
+    - catalog-process-api.json
   /system-api/
-    - catalog-db-system-api.raml
+    - catalog-db-system-api.json
   README.md
 ```
 

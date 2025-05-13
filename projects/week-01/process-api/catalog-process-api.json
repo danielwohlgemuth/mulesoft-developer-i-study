@@ -1,68 +1,13 @@
 {
   "openapi": "3.0.0",
   "info": {
-    "title": "catalog-db-system-api",
+    "title": "catalog-process-api",
     "version": "v1"
   },
   "paths": {
-    "/categories": {
+    "/products/available": {
       "get": {
-        "operationId": "List product categories",
-        "responses": {
-          "200": {
-            "description": "",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "type": "object",
-                  "required": [
-                    "categories"
-                  ],
-                  "properties": {
-                    "categories": {
-                      "type": "array",
-                      "items": {
-                        "$ref": "#/components/schemas/Category"
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          },
-          "500": {
-            "description": "",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/ErrorResponse"
-                }
-              }
-            }
-          }
-        },
-        "servers": [
-          {
-            "url": "https://mulecart.com/{version}/system",
-            "variables": {
-              "version": {
-                "default": "v1"
-              }
-            },
-            "x-amf-parameters": {
-              "version": {
-                "default": "v1",
-                "example": "v1",
-                "type": "string"
-              }
-            }
-          }
-        ]
-      }
-    },
-    "/products": {
-      "get": {
-        "operationId": "List all products",
+        "description": "Return only active/in-stock products",
         "responses": {
           "200": {
             "description": "",
@@ -98,7 +43,7 @@
         },
         "servers": [
           {
-            "url": "https://mulecart.com/{version}/system",
+            "url": "https://mulecart.com/{version}/process",
             "variables": {
               "version": {
                 "default": "v1"
@@ -115,22 +60,9 @@
         ]
       }
     },
-    "/products/{id}": {
+    "/products/by-category": {
       "get": {
-        "operationId": "Retrieve product by ID",
-        "parameters": [
-          {
-            "name": "id",
-            "required": true,
-            "in": "path",
-            "schema": {
-              "type": "string"
-            }
-          }
-        ],
-        "requestBody": {
-          "content": {}
-        },
+        "description": "Filter by category",
         "responses": {
           "200": {
             "description": "",
@@ -139,11 +71,14 @@
                 "schema": {
                   "type": "object",
                   "required": [
-                    "product"
+                    "products"
                   ],
                   "properties": {
-                    "product": {
-                      "$ref": "#/components/schemas/Product"
+                    "products": {
+                      "type": "array",
+                      "items": {
+                        "$ref": "#/components/schemas/Product"
+                      }
                     }
                   }
                 }
@@ -163,7 +98,7 @@
         },
         "servers": [
           {
-            "url": "https://mulecart.com/{version}/system",
+            "url": "https://mulecart.com/{version}/process",
             "variables": {
               "version": {
                 "default": "v1"
@@ -183,30 +118,6 @@
   },
   "components": {
     "schemas": {
-      "Category": {
-        "type": "object",
-        "required": [
-          "name"
-        ],
-        "properties": {
-          "name": {
-            "example": "Bedroom",
-            "type": "string"
-          }
-        }
-      },
-      "ErrorResponse": {
-        "type": "object",
-        "required": [
-          "message"
-        ],
-        "properties": {
-          "message": {
-            "example": "Couldn't find the product",
-            "type": "string"
-          }
-        }
-      },
       "Product": {
         "type": "object",
         "required": [
@@ -230,6 +141,18 @@
           },
           "image": {
             "example": "https://media.mulecart.com/123e4567-e89b-42d3-a456-556642440000",
+            "type": "string"
+          }
+        }
+      },
+      "ErrorResponse": {
+        "type": "object",
+        "required": [
+          "message"
+        ],
+        "properties": {
+          "message": {
+            "example": "Couldn't find any products",
             "type": "string"
           }
         }
