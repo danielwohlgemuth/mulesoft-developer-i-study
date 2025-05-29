@@ -1,0 +1,33 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+      "version": "1.0.0",
+      "title": "Category"
+    },
+    "components": {
+      "schemas": {
+        "Category": {
+          "type": "object",
+          "required": [
+            "id",
+            "name"
+          ],
+          "properties": {
+            "id": {
+              "type": "string",
+              "example": "123e4567-e89b-42d3-a456-556642440000"
+            },
+            "name": {
+              "type": "string",
+              "example": "Bedroom"
+            },
+            "description": {
+              "type": "string",
+              "example": "Includes bedroom furniture"
+            }
+          }
+        }
+      }
+    },
+    "paths": {}
+  }

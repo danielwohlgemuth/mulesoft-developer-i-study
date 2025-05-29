@@ -1,0 +1,186 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "catalog-experience-api"
+  },
+  "paths": {
+    "/products": {
+      "get": {
+        "description": "Returns a paginated list of products",
+        "parameters": [
+          {
+            "$ref": "mixins/Pagination.json#/components/schemas/Page"
+          },
+          {
+            "$ref": "mixins/Pagination.json#/components/schemas/Limit"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "dataTypes/ProductsResponse.json#/components/schemas/ProductsResponse"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "dataTypes/ErrorResponse.json#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/products/{id}": {
+      "get": {
+        "description": "Returns detailed information about a specific product",
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "dataTypes/ProductResponse.json#/components/schemas/ProductResponse"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "dataTypes/ErrorResponse.json#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/products/featured": {
+      "get": {
+        "description": "Returns promoted products for the homepage",
+        "parameters": [
+          {
+            "$ref": "mixins/Pagination.json#/components/schemas/Page"
+          },
+          {
+            "$ref": "mixins/Pagination.json#/components/schemas/Limit"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "dataTypes/ProductsResponse.json#/components/schemas/ProductsResponse"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "dataTypes/ErrorResponse.json#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/products/search": {
+      "get": {
+        "description": "Returns promoted products for the homepage",
+        "parameters": [
+          {
+            "name": "q",
+            "in": "query",
+            "required": true,
+            "description": "Search term",
+            "schema": {
+              "type": "string"
+            },
+            "example": "lamp"
+          },
+          {
+            "$ref": "mixins/Pagination.json#/components/schemas/Page"
+          },
+          {
+            "$ref": "mixins/Pagination.json#/components/schemas/Limit"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "dataTypes/ProductsResponse.json#/components/schemas/ProductsResponse"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "dataTypes/ErrorResponse.json#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/products/categories": {
+      "get": {
+        "description": "Returns all product categories",
+        "parameters": [
+          {
+            "$ref": "mixins/Pagination.json#/components/schemas/Page"
+          },
+          {
+            "$ref": "mixins/Pagination.json#/components/schemas/Limit"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "dataTypes/CategoriesResponse.json#/components/schemas/CategoriesResponse"
+                }
+              }
+            }
+          },
+          "500": {
+            "description": "",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "dataTypes/ErrorResponse.json#/components/schemas/ErrorResponse"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

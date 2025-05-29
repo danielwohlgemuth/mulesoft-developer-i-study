@@ -13,23 +13,19 @@ This layer is also the public-facing contract that will later be backed by imple
 
 ## Project Structure
 ```
-/projects/week02-product-api-design/
-  /experience-api/
-    - catalog-experience-api.json
-    - dataTypes/
-        - Product.json
-        - Category.json
-    - examples/
-        - product-example.json
-        - category-example.json
-    - traits/
-        - pagination.json
-        - error-response.json
+/projects/week-02/
+  - catalog-experience-api.json
+  - dataTypes/
+    - Product.json
+    - Category.json
+  - examples/
+    - product-example.json
+    - category-example.json
+  - traits/
+    - pagination.json
+    - error-response.json
   README.md
 ```
-
-## API Definition (Experience Layer)
-- Base URI: /products
 
 ### Endpoints:
 - `GET /products` – Returns a paginated list of products

@@ -1,0 +1,28 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "ErrorResponse"
+  },
+  "components": {
+    "schemas": {
+      "ErrorResponse": {
+        "type": "object",
+        "required": [
+          "message"
+        ],
+        "properties": {
+          "code": {
+            "example": 500,
+            "type": "integer"
+          },
+          "message": {
+            "example": "Couldn't find any products",
+            "type": "string"
+          }
+        }
+      }
+    }
+  },
+  "paths": {}
+}

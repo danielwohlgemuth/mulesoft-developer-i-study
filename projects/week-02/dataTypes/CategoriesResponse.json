@@ -1,0 +1,26 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+      "version": "1.0.0",
+      "title": "CategoriesResponse"
+    },
+    "components": {
+      "schemas": {
+        "CategoriesResponse": {
+          "type": "object",
+          "required": [
+            "categories"
+          ],
+          "properties": {
+            "categories": {
+              "type": "array",
+              "items": {
+                "$ref": "Category.json#/components/schemas/Category"
+              }
+            }
+          }
+        }
+      }
+    },
+    "paths": {}
+  }

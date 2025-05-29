@@ -1,0 +1,47 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "Product"
+  },
+  "components": {
+    "schemas": {
+      "Product": {
+        "type": "object",
+        "required": [
+          "id",
+          "name",
+          "price",
+          "image",
+          "inventoryStatus"
+        ],
+        "properties": {
+          "id": {
+            "example": "123e4567-e89b-42d3-a456-556642440000",
+            "type": "string"
+          },
+          "name": {
+            "example": "Lamp",
+            "type": "string"
+          },
+          "price": {
+            "example": "13.5",
+            "type": "string"
+          },
+          "description": {
+            "example": "A lamp",
+            "type": "string"
+          },
+          "image": {
+            "example": "https://media.mulecart.com/123e4567-e89b-42d3-a456-556642440000",
+            "type": "string"
+          },
+          "inventoryStatus": {
+            "example": "IN_STOCK",
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

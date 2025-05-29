@@ -1,0 +1,26 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "ProductsResponse"
+  },
+  "components": {
+    "schemas": {
+      "ProductsResponse": {
+        "type": "object",
+        "required": [
+          "products"
+        ],
+        "properties": {
+          "products": {
+            "type": "array",
+            "items": {
+              "$ref": "Product.json#/components/schemas/Product"
+            }
+          }
+        }
+      }
+    }
+  },
+  "paths": {}
+}
